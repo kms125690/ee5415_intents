@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ThirdActivity.class);
         startActivityForResult(intent, REQUEST_CODE);
     }
+
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE) {
             if (resultCode == RESULT_OK) {
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void callNumber(View view) {
-        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:34426789"));
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:67642550"));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
